@@ -3,5 +3,5 @@ display_name: OpenCode 模型适配器
 desc: 专为 OpenCode (包含 muse-spark 等免费层及全系模型) 设计的 AstrBot 适配插件。自动解决 403 FreeTierError，补全 CLI 协议头与内置工具链，支持 Responses 及 ChatCompletions 接口流式/非流式透明转换。
 version: v1.0.0
 author: AsryMiu
-repo: https://github.com/soulter/AstrBot
+repo: https://github.com/ShirakawaYuina/astrbot_plugin_opencode
 support_platforms: []
