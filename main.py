@@ -21,7 +21,7 @@ PLUGIN_NAME = "astrbot_plugin_opencode"
     PLUGIN_NAME,
     "Antigravity",
     "专为 OpenCode 免费及全系模型定制的 AstrBot 适配插件",
-    "1.0.0",
+    "1.0.1",
 )
 class OpenCodePlugin(Star):
     def __init__(self, context: Context, config: dict[str, Any] | None = None) -> None:
@@ -43,7 +43,7 @@ class OpenCodePlugin(Star):
         """OpenCode 调试与诊断指令: /opencode [status|test]"""
         action = action.lower().strip()
         if action == "test":
-            target_model = args[0] if args else "muse-spark-1.3-contributor-free"
+            target_model = args[0] if args else "glm-5.3-flash-free"
             yield event.plain_result(f"⏳ 正在测试 OpenCode 模型 [{target_model}]，请稍候...")
             
             # 从 AstrBot 配置中获取 opencode 提供商的 proxy 和 key
@@ -105,5 +105,5 @@ class OpenCodePlugin(Star):
                 "• 核心特性: 绕过 403 FreeTier 校验、补全 11 项内置工具、自动协议降级/升级\n"
                 "• 可用指令:\n"
                 "  /opencode status - 查看运行状态\n"
-                "  /opencode test [模型名] - 快速测试模型连通性（默认 muse-spark-1.3-contributor-free）"
+                "  /opencode test [模型名] - 快速测试模型连通性（默认 glm-5.3-flash-free）"
             )

@@ -46,13 +46,13 @@ class ProviderOpenCodeResponses(ProviderOpenAIResponses):
         except Exception as e:
             logger.warning("[OpenCode] 获取动态模型列表失败，使用预设常用模型列表: %s", e)
             return [
-                "muse-spark-1.3-contributor-free",
-                "space-bunny-free",
+                "glm-5.3-flash-free",
+                "deepseek-v4.1-flash-free",
                 "mimo-v2.6-flash-free",
-                "fledge-alpha-free",
-                "mimo-v2.5-free",
-                "ling-3.1-flash-free",
                 "nemotron-3.5-lightning-free",
+                "nemotron-3.5-super-vl-free",
+                "minimax-m3.1-flash-free",
+                "beam-free",
                 "longcat-2.5-preview-free",
                 "big-pickle",
             ]
@@ -83,13 +83,13 @@ class ProviderOpenCodeChat(ProviderOpenAIOfficial):
         except Exception as e:
             logger.warning("[OpenCode] 获取动态模型列表失败，使用预设常用模型列表: %s", e)
             return [
-                "muse-spark-1.3-contributor-free",
-                "space-bunny-free",
+                "glm-5.3-flash-free",
+                "deepseek-v4.1-flash-free",
                 "mimo-v2.6-flash-free",
-                "fledge-alpha-free",
-                "mimo-v2.5-free",
-                "ling-3.1-flash-free",
                 "nemotron-3.5-lightning-free",
+                "nemotron-3.5-super-vl-free",
+                "minimax-m3.1-flash-free",
+                "beam-free",
                 "longcat-2.5-preview-free",
                 "big-pickle",
             ]
